@@ -3,7 +3,7 @@ app = Flask(__name__)
 users = {}
 @app.route('/')
 def home():
-    return render_template('welcome.html')
+    return render_template('index.html')
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
